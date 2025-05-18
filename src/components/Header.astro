@@ -1,0 +1,43 @@
+
+<header class="flex justify-between px-8 py-2 bg-neutral-900 text-white items-center">
+  <span class="text-7xl">PM</span>
+  <nav class="hidden sm:flex flex-row gap-10 text-lg">
+    <a href="/projects">PROJECTS</a>
+    <a href="/experience">EXPERIENCE</a>
+    <a href="/contact">CONTACT</a>
+  </nav>
+  <button id="burguer-menu-button" aria-label="open-menu" class="sm:hidden" type="button">
+    <img src="/images/burguer.svg" alt="burguer menu" width=40 height=40>
+  </button>
+  <dialog 
+    id="menu-dialog" 
+    role="dialog" 
+    aria-modal="true" 
+    class="flex flex-col p-4 z-50 bg-neutral-900 max-w-full text-white w-full max-h-full h-full translate-x-0 transition-discrete duration-300 sm:hidden starting:-translate-x-full [&:not([open])]:-translate-x-full">
+    <button 
+      id="close-menu-button"
+      type="button"
+      aria-label="close-menu"
+      class="flex place-self-end sm:hidden">
+      <img src="/images/close.svg" alt="close menu" width=40 height=40>
+    </button>
+    <div class="flex flex-col gap-14 w-full items-center justify-center text-3xl flex-1">
+      <a href="/projects">PROJECTS</a>
+      <a href="/experience">EXPERIENCE</a>
+      <a href="/contact">CONTACT</a>
+    </div>
+  </dialog>
+</header>
+
+<script>
+  const burguerMenuButton = document.getElementById('burguer-menu-button');
+  const closeMenuButton = document.getElementById('close-menu-button');
+  const mobileMenu = document.getElementById('menu-dialog') as HTMLDialogElement;
+
+  const toggleMenu = () => {
+    mobileMenu.open ? mobileMenu.close() : mobileMenu.showModal();
+  };
+
+  burguerMenuButton?.addEventListener('click', toggleMenu);
+  closeMenuButton?.addEventListener('click', toggleMenu);
+</script>
