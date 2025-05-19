@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: '2022',
+    title: 'Landlab, laboratorio de paisajes',
+    description: "Col-laborador en projectes d'espai públic, paisatge i resiliència climática. Projectes destacats: Pla d'Adaptació al Canvi Climátic de al costa de al Regió de Múrcia, Pla d'Adaptació Costanera de l'Area Metropolitana de Lima-Callao (Perú), Plaça Enric Granados-Consell de Cent (Barcelona)",
+  },
+  {
+    date: '2023',
+    title: 'Jordi Henrich, arquitecte',
+    description: 'Becari. Projecte destacat: Passeig Marítim de al Badia de Sapri (Italia)'
+  },
+  {
+    date: '2024',
+    title: "Departament d'Urbanisme iOrdenació del Territori (DUOT-UPC)",
+    description: "Assistent a la docència del curs Urbanísitca Ill, a carrec de la professora Zaida Muxí"
+  },
+]
+---
+<ol class="relative border-s border-gray-200"> 
+  {
+    EXPERIENCE.map(experience => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience}></ExperienceItem>
+      </li>
+    ))
+  }                 
+</ol>
+
