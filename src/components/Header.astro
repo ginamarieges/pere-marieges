@@ -33,11 +33,16 @@
   const burguerMenuButton = document.getElementById('burguer-menu-button');
   const closeMenuButton = document.getElementById('close-menu-button');
   const mobileMenu = document.getElementById('menu-dialog') as HTMLDialogElement;
+  const dialogLinks = mobileMenu.querySelectorAll("a");
 
   const toggleMenu = () => {
     mobileMenu.open ? mobileMenu.close() : mobileMenu.showModal();
   };
-
+  dialogLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.close();
+  });
+});
   burguerMenuButton?.addEventListener('click', toggleMenu);
   closeMenuButton?.addEventListener('click', toggleMenu);
 </script>

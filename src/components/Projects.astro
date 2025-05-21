@@ -1,0 +1,95 @@
+---
+type Project = {
+  id: number,
+  name: string,
+  type: "architecture"|"city"|"landscape"
+  images: string[],
+  description: string,
+  summary: string,
+  localization: string,
+  team?: string
+}
+const PROJECTS: Project[] = [
+  {
+    id: 1,
+    name: "Co-housing Font d'en Fargues",
+    type: "architecture",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp", "image_4.webp", "image_5.webp"], 
+    description: `Al'encreuament entre el carrer de la Font d'en Fargues i el carrer del doctor Coll trobem el solar on s'emplaça aquest projecte d'habitatge cooperatiu. La pendent del terreny en un punt de frontera entre la natura i la ciutat, així com un teixit urbà caracteritzat per la construcció tradicional i la tranquil·litat del barri condicionen en bona part el lloc i el projecte. L'esquema del mòdul de la planta parteix d'una divisió en 9 peces, de les quals la central es pensa d'entrada com a element unificador i de comunicació vertical. Per tal de respondre a les característiques del lloc, la forma final de la planta té una forma de paral·lelepípede, generant una jerarquia de formes, que aniran associades a la funció de cada peça, així com també determinaran l'estructura formada per un mur perimetral de càrrega i quatre pilars que circumscriuen l'espai central, emfatitzant-ne la seva importància com a espai relacional. Com a criteri general, a cada planta, els trapezis més petits es dediquen a unitats de vivenda íntima. Es concep l'espai com a únic, on un element entès com a mobiliari recull les funcions de bany i, en alguns casos, de petita cuina, així com també té un nínxol que permet diversos usos, com el llit o un escriptori. Cada planta compta amb espais de relació i en el cas de la baixa i la primera, una cuina comuna amb accés a un petit balcó. L'espai central, articula la connexió entre plantes a través d'un espai a mitja alçada que serveix com a espai de treball. Aquest mòdul es repeteix fins a quatre vegades dibuixant la cantonada i la transició de la ciutat a la muntanya. L'acoblament dels quatre mòduls genera una variació de volums amb un conjunt de patis i terrasses característic del teixit del barri. La secció de l'edifici es torna important a l'hora de fer arribar llum als diferents espais ja que està orientat a nord, i en això els patis juguen un paper fonamental. És important també, pel que fa a la volumetria i l'adequació al teixit existent, la continuïtat de la façana: mentre que al carrer del doctor Coll es planteja una façana de continuïtat amb la línia existent, al carrer de la Font d'en Fargues es fragmenta molt més, imitant les edificacions aïllades del voltant.`,
+    summary: `Projecte d'habitatge cooperatiu`,
+    localization: "Carrer del doctor Coll - passeig de la Font d'en Fargues, Barcelona",
+    team: "Albert Fabià, Pere Marieges"
+  },
+  {
+    id: 2,
+    name: "Edifici d'oficines al barri d'Ostiense",
+    type: "architecture",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp", "image_4.webp", "image_5.webp", "image_6.webp"],
+    description: `El barri romà d'Ostiense entre la piazza della Piramide i la basílica de San Paolo es caracteritza per grans edificis de vivenda intensiva al llarg de Via Ostiense, així com també per una discontinuitat del teixit urbà degut al passat industrial lligat a la proximitat del riu Tíber i el seu port fluvial. El solar, delimitat per fortes preexistències, com l'artèria de Via Ostiense, les vies del tren i un antic edifici militar de gran importància per al teixit social i associatiu del barri, té les condicions perfectes per, a més d'un projecte d'oficines, esdevenir principalment una operació urbana que permeti guanyar un espai públic de qualitat en un indret on fa falta.
+    L'edifici està format per dues peces: una petita, que pretén competar la planta de l'edifici veí i posar-lo en valor donant-li una continuitat en el projecte, i un de gran, que respon a l'escala de Via Ostiense. L'espai sobrant es dedica a plaça pública, que queda definida a dues alçades, donant accés també des de l'espai públic a la zona dedicada a auditori i permetent un ús segmentat de l'edifici. Un element caracteritzant de la planta baixa del projecte i de la plaça és el pórtic d'accés als comerços de planta baixa que permet recórrer tota la intervenció sota cobert.
+    La planta s'organitza a partir de dues franges on s'acumulen tots els espais servidors, les comunicacions verticals, així com també els patis d'instal·lacions. Aquests nuclis, que permeten alliberar la resta de la planta són també elements importants pel que fa al funcionament estructural de l'edifici. Hi ha una clara diferència funcional, també, entre els dos blocs que conformen l'edifici: mentre el petit està destinat a l'auditori i la cafeteria, el gran està destinat als espais de treball, deixant els espais col·lectius cap a la plaça, i els despatxos individuals cap a la façana nord.`,
+    summary: "Resum de l'edifici d'oficines",
+    localization: "Via Ostiense - via del Porto Fluviale, Roma",
+    team: "Marta Sacristán, Cristina Santos, Pere Marieges"
+  },
+  {
+    id: 3,
+    name: "Pla d e Regeneració Urbana Acilia-Dragona",
+    type: "city",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp", "image_4.webp", "image_5.webp", "image_6.webp"],
+    description:"El X municipi de Roma és un dels més poblats de la capital italiana, però és alhora també on manifesta de manera més clara la discontinuitat de la trama periurbana tan característica de les zones situades fora del Grande Raccordo Anulare (cinturó de ronda), construides en gran part fora del planejament durant la segona meitat del segle X. Aquest projecte de regeneració de la zona situada entre Acilia i el Parco del Drago pretén, a partir del riu i els espais naturals que l'envolten, recosir tota la trama urbana, posant-la en valor i potenciant-la com a infrastructura verda i blava de cohesió territorial isocial d'aquesta zona de la perifèria romana. Un fet a destacar de la zona sud de Roma és el sistema que formen el patrimoni ambiental Iligat al riu i el mosaic agroforestal i el patrimoni historic, tant de restes Romanes com patrimoni arquitectònic Iligat als usos agrícoles del lloc. Aquest treball està format per una extensa analisis prèvia de l'estat actual del lloc, des de les seves característiques físiques, fins a les ambientals i socials, així com també conté una identificació dels actors presents sobre la zona, per tal de poder fer propostes de millors que els tinguin en compte. Aquestes propoestes generals queden recollides en un masterplan, que també indica zones on es proposen actuacions d'escala més petita i detallada.",
+    summary: 'Resum del pla de regeneració',
+    localization: "Acilia, XMunicipi, Roma",
+    team: "Francesca d'Uffizi, Ana Milanese, Isabella Patricolo, Marianna Petti, Claudia Posati, Gabriele Sansonetti, Fabio Testa, Daniele Mazzoni, Pere Marieges"
+  },
+  {
+    id: 4,
+    name: "Centre de formació agraria",
+    type: "landscape",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp","image_4.webp", "image_5.webp", "image_6.webp","image_7.webp", "image_8.webp"],
+    description: "En un context agrari rodejat de grans infraestructures ien un moment de gran polèmica al voltant de la conservació del tram final del riu Llobregat es proposa un projecte d'intervenció irevalorització del canal de la Infanta a la zona agrícola del Pla del Colomer, a Pallejà, a través d'un centre de formació agraria. Es proposa intervenir en un lloc de grans dimensions, caracteritzat per la posibilitat únicament de recorreguts perimetrals, tot i la seva vocació de connexió entre la zona urbana, el mosaic agrari vinculat al canal, i el riu. Tot ique l'element principal del projecte és un edifici educatiu, es proposa un masterplan per a tota la zona del Pla del Colomer, intervenint des del seu punt inicial per a convertir- lo en una infraestructura verda-blava a escala regional. A més, una de les premisses importants de la proposta és la connexió amb el poble i la millora de l'accés de la ciutadania a aquest espai natural productiu ia les preexistències que es posen en valor. Amb aquesta voluntat es planteja un edifici format per una gran estructura de fusta que permet aquesta connexió d'un extrem a l'altre, participant del paisatge i fent de teló de fons de tres pavellons de fusta que acullen els usos més grans del programa. La decisió d'elevar la connexió de punta a punta respon a la voluntat de no interrompre els moviments a la planta baixa, ja siguin d'aquells que treballin el camp o de la fauna existent al lloc, assegurant així la continuitat ecològica. Les cobertes dels pavellons elevats conformen un pas públic on, a més, s'hi situen horts. D'aquesta manera, es millora l'eficiència energética de l'edifici alhora que es retorna als agricultors l'espai productiu afectat per l'edifici.",
+    summary: 'Resum del centre de formació',
+    localization: "Pla del Colomer, Pallejà"
+  },
+  {
+    id: 5,
+    name: "Recuperació del passeig maritim i el front litoral d'El Masnou",
+    type: "city",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp","image_4.webp", "image_5.webp", "image_6.webp","image_7.webp", "image_8.webp","image_9.webp", "image_10.webp"],
+    description: "Avui en dia, la regressió del litoral suposa un dels majors problemes en les àrees costaneres arreu del món. La concentració de l'activitat económica en les zones properes al mar i el creixement urbà en aquestes zones degut a una activitat turísitca creixent, sumat als efectes derivats del canvi climatic com l'augment del nivell del mar, ha conduit a una fragmentació del litoral amb estructures d'enginyeria que han alterat la dinàmica natural d'aportació sedimentaria, afeblint així tots aquells elements de protecció de la costa com les platges iresultant en una pèrdua d'habitats ibiodiversitat i un augment de l'exposició de les zones vulnerables. Partint de la importància de les dues rieres que delimiten el municpi, la d'Alella i la de Teià, es planteja el nou passeig marítim com l'element que les uneix mirant sempre a les dinàmiques litorals ial què successic en cada moment en relació al mar. Així, la proposta per al nou front litoral del Masnou es basa en una caractertzació d'aquest en quatre trams, segons la realitat de cada un d'ells. El primer és aquell que comença a la part sud del municipi, on es col-loca un espipgó que conté, a més, unes piscines de mar amb una zona de bany. Aquest espigó permet fixar una zona de platja que acull una llacuna que augmenta la zona on ja s'acumula aigua acutalment al final de la riera, filtrant-ne l'aigua abans d'abocar-la al mar. A continuació, el següent tram comença després de la rotonda d'entrada al Masnou, i es caracteriza per ser la zona de prioritat invertida i on comença un dels elements estructurants del projecte: la pineda. En aquesta franja, la zona de passeig marítim seixampla i conté una zona esportiva entre els pins, col-locant a cota segura part d'aquelles activitats que fins ara es realitzaven a la platja. El tercer tram és aquell que estableix una relació més directa amb la platja. Acontinuació del passeig marítim se situa un doble cordó dunar que conté una zona d'aiguamolls que fa la mateixa funció que la llacuna del primer tram: recull l'aigua de les diferents rieres i la filtra abans d'abocar-la al mar. Finalment, l'últim tram conforma un buffer, un paisatge intermig que genera una zona d'aigües calmades pensada per a practicar esports marítims, alhora que aprofitant la baixa profunditat genera una zona d'aiguamolls salats icrea nous habitats.",
+    summary: 'Resum de la recuperació del passeig maritim',
+    localization: "El Masnou",
+    team: "Olga Marín, Pere Marieges"
+  },
+  {
+    id: 6,
+    name: "Centre d'estudis d e l'aigua",
+    type: "landscape",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp","image_4.webp", "image_5.webp", "image_6.webp","image_7.webp", "image_8.webp"],
+    description: "Donat l'emplaçament que comprèn tot un parc sencer, es planteja la intervenció a través d'un equipament d'escala metropolitana. A partir d'un programa lliure, es decideix explorar la possibilitat de situar un programa semblant al del Centre d'interpretació agrària però en un context molt diferent. Partint d'un exercici inicial de situar la peça Habitación vegetal de Cristina Iglesias en un punt del parc, ipel context més proper, tractant-se de la ciutat d'Amsterdam, l'aigua es converteix en un element central del projecte, tant a l'hora de construir el programa com a l'hora de plantejar l'edifici. A més, la condició de límit entre la terra i l'aigua també es converteix en un dels elements més importants del projecte. D'aquesta manera, la primera intervenció de la proposta consisteix en la consolidació del dic de terres que marca aquest límit, alhora que es guanya terreny de maresma al Ilac. És en aquest punt intermig de maresma on es situa l'edifici. L'accés a l'edifici és mitjançant passarel les per sobre de l'aigua. L'edifici consta de dues parts: el propi pavelló que conté els espais d'investigació, treball idocència, iuna torre- mirador que dona servei al parc i funciona com a fita en el paisatge. El pavelló que conté els usos principals es caracteritza per una planta en forma de U. La façana es caracteritza per la gelosia de fusta caronitzada, generant un conjunt molt compacte des de la distáncia que es deixa descobrir poc a poc a mesura que un s'hi va apropant. Aquest conjunt queda perforat en la seva part central per un espai exterior, que permet fer de finestra al paisatge del llac, de manera que es preservi la visual sobre aquest espai des del parc, i no convertint-la en exclusiva de l'edifici.",
+    summary: "Resum del centre d'estudis",
+    localization: "Amsterdamse Bos, Amsterdam, Països Baixos"
+  },
+  {
+    id: 7,
+    name: "Nojantri: recuperació urbana i ambiental del riu Tiber",
+    type: "city",
+    images: ["image_1.webp", "image_2.webp", "image_3.webp", "image_4.webp", "image_5.webp"], 
+    description: "La nomenclatura 'nojantri' es fa servir per a designar a la població local del barri de Trastevere i significa 'nosaltres, els altres' en contraposició a 'vojantri', 'vosaltres, els altres'. Aquesta autodeterminació reflexa la identitat local de Trastevere i les àrees properes al riu, aixi com també aquells veins que no son romans, sinó que han arribat a la ciutat. El nostre equip interdisciplinar es compon de persones provinents del camp de l'arquitectura, la historia de l'art i l'arqueologia, cap nascut a Roma, com els comerciants que historicament han ocupat aquests barris, arribats a Roma a través del riu, de la mateixa manera que ho va fer Ròmul. Sovint, les iniciatives d'intervenció urbana no inclouen entre els seus objectius o premisses l'atenció o el respecte a les comunitats locals de la zona a intervenir. Per a nosaltres, el dialeg és un element essencial en la práctica urbanística, ja que la finalitat última dels projectes ha de ser sempre la millora de la vida de la gent local, en cap cas la seva expulsió, desterrament o marginació. Tal i com diversos autors han exposat, la demolició ha estat utilizada sovint com a mètode per a desintegrar nuclis de resistència entre la població, ja que la degradació o la demolició d'un edifici genera que aquest ja no disposi d'una comunitat que se n'ocupi, o fa que aquesta no disposi del poder econòmic o polític per a oposar-se als plans de 'millora' o 'regeneració' que l'amenacen. Aquesta declaració d'intencions suposa el nucli central al voltant del qual s'articula la nostra proposta, sempre en equilibri en la millora de l'espai públic i el respecte a les identitats locals qe hi viuen, comercien i es representen a través d'una arquitectura no semrpe hegemónica. El concepte patrimoni s'extén, doncs, des de les restes arqueològiques de l'Emproium, l'antic port fluvial com a testimoni de la relació ancestral entre el riu i la venda, fins a l'activitat comercial contemporania que es manté activa gràcies a les baracche de Via Portuense de forma fixa, i a les paradetes itinerants del mercat dels diumenges a Porta Portese. D'aquesta manera, esdevenen eixos de projecte tant el patrimoni historic i arqueologic com aquell pasisatgístic i natural, i l'immaterial.",
+    summary: 'Quina podoreta fa aquest avió',
+    localization: "Porta Portese, Roma, Itàlia",
+    team: "Ramon Elías, María Forniés, Manuel Martín, Mireya Tejerina i Pere Marieges"
+
+  }
+];
+---
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {
+    PROJECTS.map(project => (
+      <div class="p-6">
+        <img src={`/images/Project_${project.id}/${project.images[0]}`} alt={`${project.name} image`}/>
+        <h3 class="mt-4">{project.name}</h3>
+      </div>
+    ))
+  }                
+</div>
