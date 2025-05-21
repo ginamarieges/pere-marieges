@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "CabinetGrotesk";
-  src: url("/fonts/fonnts.com-CabinetGrotesk-Regular.otf") format("otf");
+  src: url("/fonts/fonnts.com-CabinetGrotesk-Regular.otf") format("openType");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
