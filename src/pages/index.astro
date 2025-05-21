@@ -3,15 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout>
   <div class="grid min-h-dvh grid-rows-[auto_1fr_auto]">
     <Header></Header>
-    <main>
-      <section class="w-full mx-auto">
+    <main class="flex flex-col px-8">
+      <SectionContainer id="experience" title="Experience">
         <Experience/>
-      </section>
+      </SectionContainer>
     </main>
     <Footer></Footer>
   </div>
