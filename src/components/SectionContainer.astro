@@ -1,12 +1,12 @@
 ---
 interface Props {
   id: string,
-  title: string,
+  title?: string,
   class?: string
 }
 const {id, title, class: className } = Astro.props;
 ---
-<section id={id} class={`gap-4 mx-auto w-full py-10 ${className}`}>
+<section id={id} class={`gap-4 mx-auto w-full py-10 px-8 ${className}`}>
   <slot name="icon"></slot>
   <h2 class="text-4xl font-bold mb-4">{title}</h2>
   <slot/>
