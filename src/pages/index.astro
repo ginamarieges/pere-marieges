@@ -2,9 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout>
-  <Header></Header>
-  <Footer></Footer>
+  <div class="grid min-h-dvh grid-rows-[auto_1fr_auto]">
+    <Header></Header>
+    <main class="flex flex-col px-8">
+      <SectionContainer id="experience" title="Experience">
+        <Experience/>
+      </SectionContainer>
+    </main>
+    <Footer></Footer>
+  </div>
 </Layout>
