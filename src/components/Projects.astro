@@ -87,7 +87,8 @@ const PROJECTS: Project[] = [
   {
     PROJECTS.map(project => (
       <div class="p-6">
-        <img src={`/images/Project_${project.id}/${project.images[0]}`}/>
+        <img src={`/images/Project_${project.id}/${project.images[0]}`} alt={`${project.name} image`}/>
+        <h3 class="mt-4">{project.name}</h3>
       </div>
     ))
   }                
