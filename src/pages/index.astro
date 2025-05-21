@@ -5,12 +5,16 @@ import Footer from '../components/Footer.astro';
 import Experience from '../components/Experience.astro'
 import SectionContainer from '../components/SectionContainer.astro';
 import Contact from '../components/Contact.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout>
   <div class="grid min-h-dvh grid-rows-[auto_1fr_auto]">
     <Header></Header>
     <main class="flex flex-col pt-20 mb-10">
+      <SectionContainer id='projects' title='Projects'>
+        <Projects></Projects>
+      </SectionContainer>
       <SectionContainer id="experience" title="Experience">
         <Experience/>
       </SectionContainer>
