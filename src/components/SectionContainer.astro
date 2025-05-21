@@ -8,6 +8,11 @@ const {id, title, class: className } = Astro.props;
 ---
 <section id={id} class={`gap-4 mx-auto w-full py-10 px-8 ${className}`}>
   <slot name="icon"></slot>
-  <h2 class="text-4xl font-bold mb-4">{title}</h2>
+  {title && (
+    <div class="flex items-center gap-4 mb-6">
+      <h2 class="text-4xl font-bold whitespace-nowrap">{title}</h2>
+      <div class="flex-1 h-px bg-neutral-900"></div>
+    </div>
+  )}
   <slot/>
 </section>
