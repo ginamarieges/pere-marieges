@@ -2,11 +2,12 @@
   <div class="col-span-3 mb-8">
     <h2 class="text-center text-5xl items-center text-pretty sm:max-w-80 sm:text-6xl">LET'S TALK ABOUT YOUR PROJECT</h2>
   </div>
-  <form name="contact" method="POST" netlify autocomplete="off" class="flex flex-col gap-2 text-white col-span-2">
+  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" autocomplete="off" class="flex flex-col gap-2 text-white col-span-2">
     <input type="hidden" name="form-name" value="contact" />
     <input type="text" name="fullname" placeholder="Full name" class="border px-4 py-2 bg-white rounded-xl text-neutral-900">
     <input type="email" name="email" placeholder="Email" class="border px-4 py-2 bg-white rounded-xl text-neutral-900">
     <textarea name="message" placeholder="Message" class="border px-4 py-2 bg-white rounded-xl text-neutral-900" rows="6"></textarea>
+    <div data-netlify-recaptcha="true"></div>
     <button type="submit" class="border px-2 py-1 bg-white rounded-xl text-neutral-900 cursor-pointer">Contact me</button>
   </form>
 </div>
