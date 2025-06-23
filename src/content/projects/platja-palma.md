@@ -1,0 +1,12 @@
+---
+id: 7
+name: Platja de Palma
+cover: palma.jpg
+description: Platja de Palma is located on the east coast of the city of Palma, on the border with the municipality of Llucmajor. It includes the urban development areas of Can Pastilla, Ses Fontanelles, La Ribera, Les Meravelles and s’Arenal. The study area is located longitudinally from Palma beach and the promenade, while transversely the Sant Jordi irrigation channel drains the Pla de Sant Jordi and the Torrent des Jueus creek borders the municipality of Llucmajor.
+    Platja de Palma is considered a mature tourist area in need of a modernization process, in the current context of climate crisis and loss of biodiversity. It is in this context that regeneration is being considered, given that the coastal area has developed a tourist model that destroys the environment and the landscape.
+    This Master Plan and Preliminary Project is the first phase of a whole process of modernization to tourism circularity and climate change adaptation. The aim is a project with specific proposals for intervention and regeneration of urban streets and parks, integrating solutions based on nature, which will serve as a basis for actions to implement renaturation projects that include all aspects of tourism circularity in destinations: energy, mobility, water, land and waste generated.
+    The proposal defines on the one hand at a conceptual level the set of green/blue/grey infrastructure, (with proposed solutions based on nature, sustainable urban drainage systems (SUDS); greening at different levels according to their situation of 1st line or rear; permeability of soils, etc.), and at a constructive level with the indication of solutions and constructive details that resolve the set of areas described, with emphasis on strategic points. On the other hand and on a construction level, the project defines the indication of solutions and construction details that resolve the set of areas described, again with emphasis on strategic points: the encounter between different road typologies/open space/boundary with rustic land or according to the hierarchy of axes, taking into account the coexistence of the existing green infrastructure and the role of vulnerable habitats and ecosystems such as the dune and maritime system of the beach and the aquifers of the Pla de Sant Jordi.
+localization: Platja de Palma, Mallorca, Illes Balears
+team: LANDLAB, laboratorio de paisajes + FIOL Arquitectes
+scale:  XL / L / M 
+---
