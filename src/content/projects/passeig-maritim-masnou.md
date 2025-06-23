@@ -2,7 +2,7 @@
 id: 6
 name: Passeig Maritim Masnou
 cover: maritim-masnou.jpg
-description: 
+description: ''
 localization: El Masnou
 team: Olga Marín, Pere Marieges
 course: Urban project and Landscape, ETSAB

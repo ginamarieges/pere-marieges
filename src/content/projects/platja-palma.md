@@ -2,7 +2,7 @@
 id: 7
 name: Platja de Palma
 cover: palma.jpg
-description: 
+description: '' 
 localization: Platja de Palma, Mallorca, Illes Balears
 team: LANDLAB, laboratorio de paisajes + FIOL Arquitectes
 scale:  XL / L / M 

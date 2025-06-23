@@ -2,7 +2,7 @@
 id: 3
 name: Foodtopia
 cover: foodtopia.jpg
-description: 
+description: ''
 localization: Pla de Reixac, Montcada i Reixac
 team: Olga Marín, Pere Marieges
 course: Final Carreer Project
