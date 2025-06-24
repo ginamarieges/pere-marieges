@@ -8,7 +8,7 @@ team: Olga Marín, Pere Marieges
 course: Urban project and Landscape, ETSAB
 scale:  L
 images: [
-  "1.png", "2.png", "3.png", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"
+  "1.webp", "2.webp", "3.webp", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"
 ]
 ---
 
