@@ -6,6 +6,9 @@ description: ''
 localization: Cala Millor, Mallorca, Illes Balears
 team: LANDLAB, laboratorio de paisajes
 scale:  M
+images: [
+    "1.jpg", "2.jpg", "3.jpg"
+]
 ---
 
 Cala Millor, located on the east coast of Mallorca, stands out as a popular seaside resort in the Balearic Islands. During the summer season, its population multiplies almost three times due to its tourist attraction. However, this environment has undergone a significant transformation with an impact on its natural ecosystem.

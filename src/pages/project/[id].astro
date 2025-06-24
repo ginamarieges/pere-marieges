@@ -1,10 +1,8 @@
 ---
-import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-
 
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
@@ -16,25 +14,34 @@ export async function getStaticPaths() {
 };
 
 const { project } = Astro.props;
-const { data } = project;
-const { localization, name, course, scale, team } = data;
-
+const { data, slug } = project;
+const { localization, name, course, scale, team, images } = data;
 const { Content } = await render(project);
-
 ---
 
 <Layout title={ name }>
     <Header/>
     <div class="mx-auto w-full py-10 px-8">
-        <main class="flex flex-col pt-20 mb-10">
-            <h1>{ name }</h1>
-            <p class="text-neutral-500">{ localization }</p>
-            { course && <p class="text-neutral-500">Course: { course }</p>}
-            { scale && <p class="text-neutral-500">Scale: { scale }</p>}
-            {team && <p class="text-neutral-500">Team: {team}</p>}
-            <div>
-                <Content/>
+        <main class="pt-20 mb-10">
+            <h1 class="text-4xl font-bold whitespace-nowrap">{ name }</h1>
+            <div class="grid grid-cols-8 gap-4 mt-8">
+                <div class="col-span-2">
+                    <p class="text-neutral-500">Location: { localization }</p>
+                    { course && <p class="text-neutral-500">Course: { course }</p>}
+                    { scale && <p class="text-neutral-500">Scale: { scale }</p>}
+                    {team && <p class="text-neutral-500">Team: {team}</p>}
+                </div>
+                <div class="col-span-6">
+                    <Content/>
+                </div>
             </div>
+            {images.length > 0 && (
+                <div class="grid grid-cols-2 gap-4 mt-10">
+                    {images.map((src) => (
+                    <img src={`/images/${slug}/${src}`} class="w-full h-auto rounded" />
+                    ))}
+                </div>
+                )}
         </main>
     </div>
     <Footer/>

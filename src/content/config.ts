@@ -9,6 +9,7 @@ const projects = defineCollection({
         course: z.string().optional(),
         team: z.string().optional(),
         scale: z.string().optional(),
+        images: z.array(z.string()),
     }),
 });
 

@@ -7,6 +7,9 @@ localization: El Masnou
 team: Olga Marín, Pere Marieges
 course: Urban project and Landscape, ETSAB
 scale:  L
+images: [
+  "1.png", "2.png", "3.png", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"
+]
 ---
 
 Today, coastal regression is one of the biggest problems in coastal areas around the world. The concentration of economic activity in areas close to the sea and urban growth in these areas due to a growing tourist activity, added to the effects derived from climate change such as sea level rise, has led to a fragmentation of the coast. Moreover, engineering structures have altered the natural dynamics of sediment supply, weakening all those coastal protection elements such as beaches and resulting in a loss of habitats and biodiversity and an increase in the exposure of vulnerable areas.
