@@ -13,10 +13,10 @@ const projects = await getCollection('projects');
       return (
           
       <div class="p-6">
-        <img src={`/${cover}`} alt={`${name} image`}/>
+        <a href={`/projects/${slug}`} class="block mb-4">
+          <img src={`/images/covers/${cover}`} alt={`${name} image`} class="w-full rounded-lg"/>
+        </a>
         <h3 class="mt-4">{name}</h3>
-        <p class="text-sm text-gray-600">{localization}</p>
-        <p class="text-sm text-gray-600">Equip: {team}</p>
       </div>
     
       )
