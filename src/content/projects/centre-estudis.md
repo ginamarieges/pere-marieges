@@ -1,13 +1,13 @@
 ---
 id: 1
 name: Centre d'estudis de l'aigua
-cover: centre-estudis.jpg
+cover: centre-estudis.webp
 description: ''
 localization: Amsterdamse Bos, Amsterdam
 course: Architectures in the Metropolitan Park, ETSAB
 scale: M
 images: [
-    "1.jpg", "2.jpg", "3.png", "4.png", "5.jpg"
+    "1.webp", "2.webp", "3.webp", "4.webp", "5.webp, 6.webp"
 ]
 ---
 

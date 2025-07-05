@@ -1,13 +1,13 @@
 ---
 id: 4
 name: LIFE - Adapt Cala Millor
-cover: LIFE.jpg
+cover: LIFE.webp
 description: ''
 localization: Cala Millor, Mallorca, Illes Balears
 team: LANDLAB, laboratorio de paisajes
 scale:  M
 images: [
-    "1.jpg", "2.jpg", "3.jpg"
+    "1.webp", "2.webp", "3.webp"
 ]
 ---
 

@@ -1,12 +1,12 @@
 ---
 id: 7
 name: Platja de Palma
-cover: palma.jpg
+cover: palma.webp
 description: '' 
 localization: Platja de Palma, Mallorca, Illes Balears
 team: LANDLAB, laboratorio de paisajes + FIOL Arquitectes
 scale:  XL / L / M 
-images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+images: ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp"]
 ---
 
 Platja de Palma is located on the east coast of the city of Palma, on the border with the municipality of Llucmajor. It includes the urban development areas of Can Pastilla, Ses Fontanelles, La Ribera, Les Meravelles and s’Arenal. The study area is located longitudinally from Palma beach and the promenade, while transversely the Sant Jordi irrigation channel drains the Pla de Sant Jordi and the Torrent des Jueus creek borders the municipality of Llucmajor.

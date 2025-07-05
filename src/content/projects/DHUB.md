@@ -1,13 +1,13 @@
 ---
 id: 2
 name: DHUB - Anatomia d'una platja
-cover: DHUB.jpg
+cover: DHUB.webp
 description: ''
 localization: Disseny Hub Barcelona and La Pineda, Vila-seca
 team?: LANDLAB, laboratorio de paisajes
 scale: XS
 images: [
-    "1.jpg", "2.jpg", "3.jpg"
+    "1.webp", "2.webp", "3.webp"
 ]
 ---
 
