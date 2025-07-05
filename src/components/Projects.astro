@@ -6,14 +6,14 @@ const projects = await getCollection('projects');
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
   {
-    projects.map(project => {
+    projects.map((project, index) => {
       const { slug, data } = project;
       const { name, cover } = data;
 
       return (    
       <article class="flex flex-col">
         <a href={`/project/${slug}`} class="mb-2 xl:mb-0 transition">
-          <img src={`/images/covers/${cover}`} alt={`${name} image`} class="mr-5 w-48 rounded w-full rounded-lg"/>
+          <img src={`/images/covers/${cover}`} alt={`${name} image`} width="500" height="300" class="mr-5 rounded-xl" loading={index >= 3 ? "lazy" : "eager"}/>
         </a>
         <h3 class="mt-4">{name}</h3>
       </article>
