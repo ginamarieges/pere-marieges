@@ -38,7 +38,7 @@ const { Content } = await render(project);
             {images.length > 0 && (
                 <div class="grid lg:grid-cols-3 gap-4 mt-10">
                     {images.map((src) => (
-                    <img src={`/images/${slug}/${src}`} class="w-full h-auto rounded" />
+                    <img src={`/images/${slug}/${src}`} width="500" height="300" class="rounded" />
                     ))}
                 </div>
                 )}
