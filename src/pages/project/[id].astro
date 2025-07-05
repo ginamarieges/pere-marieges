@@ -24,7 +24,7 @@ const { Content } = await render(project);
     <div class="mx-auto w-full py-10 px-8">
         <main class="pt-20 mb-10">
             <h1 class="text-4xl font-bold whitespace-nowrap">{ name }</h1>
-            <div class="grid grid-cols-8 gap-4 mt-8">
+            <div class="flex flex-col md:grid grid-cols-8 gap-4 mt-8">
                 <div class="col-span-2">
                     <p class="text-neutral-500">Location: { localization }</p>
                     { course && <p class="text-neutral-500">Course: { course }</p>}
@@ -36,7 +36,7 @@ const { Content } = await render(project);
                 </div>
             </div>
             {images.length > 0 && (
-                <div class="grid grid-cols-2 gap-4 mt-10">
+                <div class="grid lg:grid-cols-3 gap-4 mt-10">
                     {images.map((src) => (
                     <img src={`/images/${slug}/${src}`} class="w-full h-auto rounded" />
                     ))}
