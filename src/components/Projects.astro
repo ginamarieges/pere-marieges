@@ -4,19 +4,30 @@ import { getCollection } from 'astro:content';
 const projects = await getCollection('projects');
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="columns-1 sm:columns-2 md:columns-3 gap-6 [column-fill:_balance]">
   {
     projects.map((project, index) => {
       const { slug, data } = project;
       const { name, cover } = data;
 
-      return (    
-      <article class="flex flex-col">
-        <a href={`/project/${slug}`} class="mb-2 xl:mb-0 transition">
-          <img src={`/images/covers/${cover}`} alt={`${name} image`} width="500" height="300" class="mr-5 rounded-xl" loading={index >= 3 ? "lazy" : "eager"}/>
-        </a>
-        <h3 class="mt-4">{name}</h3>
-      </article>
+      return (
+        <article class="mb-6 break-inside-avoid">
+          <a 
+            href={`/project/${slug}`} 
+            class="block overflow-hidden rounded-xl transition-transform duration-500 ease-out hover:[&_img]:scale-105 hover:[&_img]:brightness-105"
+          >
+            <img
+              src={`/images/covers/${cover}`}
+              alt={`${name} image`}
+              width="500"
+              height="300"
+              class="w-full h-auto transition-transform duration-500 ease-out"
+              loading={index >= 1 ? "lazy" : "eager"}
+              fetchpriority={index === 0 ? "high" : "low"}
+            />
+          </a>
+          <h3 class="mt-2 text-pretty">{name}</h3>
+        </article>
       )
     })
   }

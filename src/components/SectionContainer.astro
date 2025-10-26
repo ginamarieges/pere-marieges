@@ -6,7 +6,7 @@ interface Props {
 }
 const {id, title, class: className } = Astro.props;
 ---
-<section id={id} class={`gap-4 mx-auto w-full py-10 px-8 ${className}`}>
+<section id={id} class={`scroll-mt-24 gap-4 mx-auto w-full py-10 px-8 ${className}`}>
   <slot name="icon"></slot>
   {title && (
     <div class="flex items-center gap-4 mb-6">

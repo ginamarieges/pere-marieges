@@ -23,7 +23,7 @@ const { Content } = await render(project);
     <Header/>
     <div class="mx-auto w-full py-10 px-8">
         <main class="pt-20 mb-10">
-            <h1 class="text-4xl font-bold whitespace-nowrap">{ name }</h1>
+            <h1 class="text-4xl font-bold text-pretty">{ name }</h1>
             <div class="flex flex-col md:grid grid-cols-8 gap-4 mt-8">
                 <div class="col-span-2">
                     <p class="text-neutral-500">Location: { localization }</p>
@@ -38,7 +38,7 @@ const { Content } = await render(project);
             {images.length > 0 && (
                 <div class="grid lg:grid-cols-3 gap-4 mt-10">
                     {images.map((src) => (
-                    <img src={`/images/${slug}/${src}`} width="500" height="300" class="rounded" />
+                    <img src={`/images/${slug}/${src}`} width="500" height="300" class="rounded mx-auto" />
                     ))}
                 </div>
                 )}
