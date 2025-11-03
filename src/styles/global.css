@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/fonts/fonnts.com-CabinetGrotesk-Bold.otf') format('opentype');
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/fonnts.com-CabinetGrotesk-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,4 +18,12 @@
 
 @theme {
   --font-sans: "CabinetGrotesk", "sans-serif";
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

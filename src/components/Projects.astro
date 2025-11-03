@@ -26,7 +26,9 @@ const projects = await getCollection('projects');
               fetchpriority={index === 0 ? "high" : "low"}
             />
           </a>
-          <h3 class="mt-2 text-pretty">{name}</h3>
+          <h3 lang="ca" class="mt-2 text-pretty">
+            <a href={`/project/${slug}`}>{name}</a>
+          </h3>
         </article>
       )
     })
