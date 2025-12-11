@@ -1,48 +1,75 @@
-# Astro Starter Kit: Basics
+# Pere Marieges Architecture Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+Web portfolio showcasing Pere Marieges' architecture projects, built with Astro and Tailwind CSS.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Single-page main layout (`index.astro`) with reusable sections: `AboutMe`, `Projects`, `Experience`, and `Contact`.
+- Architecture projects rendered via Astro's Content system, each with its own dynamic page (e.g. `[id].astro`).
+- Responsive design using Tailwind CSS utilities, optimized to highlight images, descriptions, and professional experience.
+- Continuous deployment to Netlify from the main repository branch.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tech Stack
 
-## 🚀 Project Structure
+- Astro
+- Tailwind CSS
+- Netlify (deployment)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── fonts/
+│   └── images/
 ├── src/
 │   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── components/
+│       ├── AboutMe.astro
+│       ├── Projects.astro
+│       ├── Contact.astro
+│       ├── SectionContainer.astro
+│       ├── Header.astro
+│       ├── Footer.astro
+│       └── Experience.astro
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Installation
 
-## 🧞 Commands
+Clone the repository and install dependencies:
 
-All commands are run from the root of the project, from a terminal:
+```sh
+git clone <https://github.com/ginamarieges/pere-marieges.git>
+cd <project_name>
+npm install
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Available Scripts
 
-## 👀 Want to learn more?
+Local development:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+npm run dev
+```
+
+Production build:
+
+```sh
+npm run build
+```
+
+Build preview:
+
+```sh
+npm run preview
+```
+
+## Deployment
+
+Deployed on Netlify with standard configuration:
+Build command: `npm run build`
+Publish directory: `dist`
